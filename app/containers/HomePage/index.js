@@ -22,8 +22,8 @@ export class HomePage extends React.Component { // eslint-disable-line react/pre
     return (
       <div>
         <Helmet>
-          <title>HomePage</title>
-          <meta name="description" content="Description of HomePage" />
+          <title>Algorithms</title>
+          <meta name="Algorithms" content="Homepage for algorithms" />
         </Helmet>
       </div>
     );
