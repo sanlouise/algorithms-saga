@@ -1,4 +1,4 @@
-![Sorty](/alogorithms-saga/app/images/sorty.png)
+![Sorty](/algorithms-saga/app/images/sorty.png)
 
 Find out how to use sorting algorithms in Ruby and JavaScript.
 
