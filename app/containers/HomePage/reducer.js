@@ -1,9 +1,3 @@
-/*
- *
- * HomePage reducer
- *
- */
-
 import { fromJS } from 'immutable';
 import {
   UPDATE_SORT_TYPE,
@@ -15,10 +9,10 @@ import {
 } from './constants';
 
 const initialState = fromJS({
-  // Changes directly via user interaction
   sortType: '',
   language: '',
-  // Changes indirectly via user interaction, via redux-saga
+
+  //Change using redux-saga
   example: '',
   complexities: {
     space: {
@@ -30,20 +24,21 @@ const initialState = fromJS({
     },
   },
   // Static data
-  availableSortTypes: [],
-  availableLanguages: [],
+  availableSortTypes: ['Bubble', 'Heap', 'Insertion', 'Merge', 'Selection', 'Shell', 'Quick'],
+  availableLanguages: ['Javascript', 'Ruby'],
 });
+
 
 function homePageReducer(state = initialState, action) {
   switch (action.type) {
     case UPDATE_SORT_TYPE: {
-      return state.set('', action.sortType);
+      return state.set('sortType', action.sortType);
     }
     case UPDATE_LANGUAGE: {
-      return state.set('', action.language);
+      return state.set('language', action.language);
     }
     case UPDATE_EXAMPLE: {
-      return state.set('', action.example);
+      return state.set('example', action.example);
     }
     case UPDATE_SPACE_COMPLEXITY_WORST: {
       return state.setIn(['complexities', 'space', 'worst'], action.spaceComplexityWorst);
