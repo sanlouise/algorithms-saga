@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Highlight from 'react-highlight';
 import '../../../node_modules/highlight.js/styles/ocean.css';
 
-class AlgorithmData extends Component {
+class AlgorithmData extends Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = {
     language: PropTypes.string.isRequired,
     sortType: PropTypes.string.isRequired,
