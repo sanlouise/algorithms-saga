@@ -40,6 +40,8 @@ class AlgorithmData extends Component { // eslint-disable-line react/prefer-stat
             <td>{timeComplexityWorst}</td>
           </tr>
         </table>
+
+        <h2>A working example</h2>
         <Highlight className={language}>{example}</Highlight>
       </div>
     );
