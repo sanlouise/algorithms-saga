@@ -9,6 +9,7 @@ import { compose } from 'redux';
 // Externals
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';
+import AlgorithmData from 'components/AlgorithmData';
 // Internals
 import {
   updateLanguageAction,
@@ -26,7 +27,6 @@ import {
 } from './selectors';
 import reducer from './reducer';
 import saga from './saga';
-
 import './styles.css';
 
 
@@ -43,6 +43,9 @@ class HomePage extends React.Component { // eslint-disable-line react/prefer-sta
 
         <div className="wrapper">
           <div className="sidebar">
+            <div className="title">
+              <h1>Sorty</h1>
+            </div>
 
             <h2>Select a Language</h2>
 
@@ -75,15 +78,14 @@ class HomePage extends React.Component { // eslint-disable-line react/prefer-sta
             ))}
           </div>
 
-          <div className="algorithm-data">
-            <h1>Your selection:</h1>
-            <p>Language: <strong>{language}</strong></p>
-            <p>Sort Type: <strong>{sortType}</strong></p>
-            <p>Example: <strong>{example}</strong></p>
-            <p>Space Complexity Worst: <strong>{spaceComplexityWorst}</strong></p>
-            <p>Time Complexity Best: <code>{timeComplexityBest}</code></p>
-            <p>Time Complexity Worst: <strong>{timeComplexityWorst}</strong></p>
-          </div>
+          <AlgorithmData
+            language={language}
+            sortType={sortType}
+            example={example}
+            spaceComplexityWorst={spaceComplexityWorst}
+            timeComplexityBest={timeComplexityBest}
+            timeComplexityWorst={timeComplexityWorst}
+          />
         </div>
       </div>
     );
