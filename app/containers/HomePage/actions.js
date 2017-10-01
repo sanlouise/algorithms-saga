@@ -1,10 +1,3 @@
-
-/*
- *
- * HomePage actions
- *
- */
-
 import {
   UPDATE_SORT_TYPE,
   UPDATE_LANGUAGE,

@@ -1,13 +1,7 @@
 import { createSelector } from 'reselect';
 
-/**
- * Direct selector to the homePage state domain
- */
 const selectHomePageDomain = (state) => state.get('homePage');
 
-/**
- * Other specific selectors
- */
 const selectSortType = () => createSelector(
   selectHomePageDomain,
   (homePage) => homePage.get('sortType')

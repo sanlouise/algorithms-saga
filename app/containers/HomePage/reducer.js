@@ -12,7 +12,7 @@ const initialState = fromJS({
   sortType: '',
   language: '',
 
-  //Change using redux-saga
+  // Change using redux-saga
   example: '',
   complexities: {
     space: {

@@ -1,11 +1,3 @@
-/*
- *
- * HomePage constants
- *
- */
-
-export const DEFAULT_ACTION = 'app/HomePage/DEFAULT_ACTION';
-
 export const UPDATE_SORT_TYPE = 'app/HomePage/UPDATE_SORT_TYPE';
 export const UPDATE_LANGUAGE = 'app/HomePage/UPDATE_LANGUAGE';
 export const UPDATE_EXAMPLE = 'app/HomePage/UPDATE_EXAMPLE';
