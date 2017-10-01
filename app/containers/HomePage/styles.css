@@ -2,18 +2,32 @@
   display: flex;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
+  background-color: #2C313B;
+  color: #FFF;
 }
 
 .sidebar {
   color: #FFF;
-  background-color: #bbdefb;
+  background-color: #1c1c1c;
   font-size: 1em;
   font-family: 'Montserrat', sans-serif;
+  padding-bottom: 30px;
+}
+
+.sidebar .title {
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+  letter-spacing: 3px;
 }
 
 .sidebar h2 {
   font-size: 1.2em;
-  margin-left: 40px;
+  text-align: center;
+  margin: 30px 0;
+  color: #8FA1B2;
 }
 
 input {
@@ -37,6 +51,7 @@ label {
 
   .algorithm-data {
     width: 100%;
+    padding: 20px 20px;
   }
 }
 
@@ -44,11 +59,19 @@ label {
   font-family: 'Montserrat', sans-serif;
 }
 
+.algorithm-data .title {
+  color: #8FA1B2;
+  font-size: 1.2em;
+}
+
+.algorithm-data {
+  color: #C0C5CD;
+}
+
 @media(min-width: 602px) {
   .sidebar {
-    padding: 40px 0;
-    width: 25%;
-    height: 100vh;
+    width: 30%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
   }
@@ -57,7 +80,17 @@ label {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 75%;
-    height: 100vh;
+    width: 70%;
+    min-height: 100vh;
   }
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table th, td {
+  border: 1px solid #8FA1B2;
+  padding: 15px;
+  text-align: center;
 }
