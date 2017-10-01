@@ -15,7 +15,7 @@ Visit [Sorty](http://sorty-algorithms.herokuapp.com).
 ```
 Clone the repo
 
-cd /langsorts/langsorts-react
+cd /algorithms-saga
 
 npm install
 
